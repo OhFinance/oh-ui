@@ -1,3 +1,4 @@
+export * from "./components/Buttons";
 export * from "./components/Display";
 export * from "./components/Flex";
 export * from "./components/Paper";

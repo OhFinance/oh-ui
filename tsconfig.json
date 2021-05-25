@@ -5,7 +5,6 @@
     "lib": ["es2020", "dom"],
     "moduleResolution": "node",
     "jsx": "react-jsx",
-    "rootDir": "lib",
     "outDir": "dist",
     "strict": true,
     "esModuleInterop": true,
@@ -15,5 +14,5 @@
     "declarationMap": true,
     "skipLibCheck": true
   },
-  "include": ["lib/**/*"]
+  "include": ["lib"]
 }

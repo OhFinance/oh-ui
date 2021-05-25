@@ -28,5 +28,8 @@
     "build": "rm -rf dist && tsc --build",
     "bump:minor": "yarn version --minor",
     "bump:major": "yarn version --major"
+  },
+  "dependencies": {
+    "react-icons": "^4.2.0"
   }
 }
