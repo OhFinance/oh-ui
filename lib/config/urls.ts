@@ -7,6 +7,7 @@ const urls = {
   home: "https://oh.finance",
   medium: "https://ohfinance.medium.com/",
   telegram: "https://t.me/OhFinanceDefi",
+  tokenomics: "https://assets.oh.finance/OhFinance_Tokenomics.pdf",
   twitter: "https://twitter.com/OhFinanceDefi",
 };
 

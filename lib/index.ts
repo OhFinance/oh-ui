@@ -1,8 +1,14 @@
 export * from "./components/Buttons";
 export * from "./components/Display";
 export * from "./components/Flex";
-export * from "./components/Paper";
+export * from "./components/Header";
+export * from "./components/Modal";
+export * from "./components/Surface";
+export * from "./components/Paragraph";
+export * from "./components/Subheader";
 export * from "./components/TextDecoration";
+
+export * from './config';
 
 export * from "./contexts/ModalContext";
 export * from "./contexts/VersionContext";
@@ -13,4 +19,4 @@ export * from "./hooks/useVersion";
 
 export * from "./theme";
 
-export * from "./typings/modal";
+export * from "./types";
