@@ -1,56 +1,70 @@
-import { FC } from "react"
-import CloseIcon from '@material-ui/icons/Close';
+import { FC } from "react";
+import CloseIcon from "@material-ui/icons/Close";
 import {
   Box,
-  Dialog, 
-  DialogActions, 
-  DialogContent, 
+  Dialog,
+  DialogActions,
+  DialogContent,
   DialogTitle,
-  IconButton, 
-  makeStyles
-} from "@material-ui/core"
-import { Header } from "../Header";
+  IconButton,
+  makeStyles,
+} from "@material-ui/core";
 
 export interface ModalProps {
-  title: string;
-  isOpen: boolean;
-  onDismiss: () => void;
+  title?: string;
+  isOpen?: boolean;
+  onDismiss?: () => void;
+  maxWidth?: "sm" | "md" | "lg";
+  fullWidth?: boolean;
+  scroll?: "paper" | "body";
+  restrict?: boolean;
 }
-
 
 const useStyles = makeStyles((theme) => ({
   closeButton: {
-    position: 'absolute',
+    position: "absolute",
     top: theme.spacing(1),
     right: theme.spacing(1),
-    color: theme.palette.grey[500]
-  }
-}))
+    color: theme.palette.grey[500],
+  },
+}));
 
 export const Modal: FC<ModalProps> = ({
   title,
   isOpen,
   onDismiss,
-  children
+  maxWidth,
+  fullWidth,
+  scroll,
+  children,
 }) => {
   const classes = useStyles();
 
   return (
-    <Dialog open={isOpen} onClose={onDismiss}>
-      <DialogTitle disableTypography>
-        <Header>{title}</Header>
-        <IconButton aria-label="close" className={classes.closeButton} onClick={onDismiss}>
+    <Dialog
+      open={!!isOpen}
+      onClose={onDismiss}
+      maxWidth={maxWidth || "md"}
+      fullWidth={!!fullWidth}
+      scroll={scroll || undefined}
+    >
+      <DialogTitle>
+        {title}
+        {/* <Subheader>{title}</Subheader>
+        <IconButton
+          aria-label="close"
+          className={classes.closeButton}
+          onClick={onDismiss}
+        >
           <CloseIcon />
-        </IconButton>
+        </IconButton> */}
       </DialogTitle>
       <DialogContent dividers>
-        <Box p={3}>
-          {children}
-        </Box>
+        <Box p={3}>{children}</Box>
       </DialogContent>
       {/* <DialogActions>
 
       </DialogActions> */}
     </Dialog>
-  )
-}
+  );
+};
