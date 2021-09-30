@@ -50,14 +50,14 @@ export const Modal: FC<ModalProps> = ({
     >
       <DialogTitle>
         {title}
-        {/* <Subheader>{title}</Subheader>
+
         <IconButton
           aria-label="close"
           className={classes.closeButton}
           onClick={onDismiss}
         >
           <CloseIcon />
-        </IconButton> */}
+        </IconButton>
       </DialogTitle>
       <DialogContent dividers>
         <Box p={3}>{children}</Box>
