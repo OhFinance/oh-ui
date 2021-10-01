@@ -18,6 +18,7 @@ export interface ModalProps {
   fullWidth?: boolean;
   scroll?: "paper" | "body";
   restrict?: boolean;
+  p?: number;
 }
 
 const useStyles = makeStyles((theme) => ({
@@ -36,6 +37,7 @@ export const Modal: FC<ModalProps> = ({
   maxWidth,
   fullWidth,
   scroll,
+  p,
   children,
 }) => {
   const classes = useStyles();
@@ -60,7 +62,7 @@ export const Modal: FC<ModalProps> = ({
         </IconButton>
       </DialogTitle>
       <DialogContent dividers>
-        <Box p={3}>{children}</Box>
+        <Box p={p || 3}>{children}</Box>
       </DialogContent>
       {/* <DialogActions>
 
