@@ -10,18 +10,21 @@ export interface IconButtonProps extends MuiIconButtonProps {
   label?: string;
   href?: string;
   fontSize?: number;
+  onClick?: () => void;
 }
 
 export const IconButton: FC<IconButtonProps> = ({
   name,
   href,
   fontSize,
+  onClick,
   children,
 }) => {
   return (
     <MuiIconButton
       aria-label={name}
       href={href}
+      onClick={onClick}
       style={{ fontSize: fontSize ?? 32 }}
     >
       {children}
