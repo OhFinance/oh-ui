@@ -1,18 +1,22 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "esnext",
-    "lib": ["es2020", "dom"],
-    "moduleResolution": "node",
-    "jsx": "react-jsx",
-    "outDir": "dist",
-    "strict": true,
-    "esModuleInterop": true,
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "isolatedModules": true,
     "declaration": true,
     "declarationMap": true,
-    "skipLibCheck": true
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": ["es2020", "dom"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": false,
+    "target": "es5",
   },
-  "include": ["lib"]
+  "include": ["src"]
 }

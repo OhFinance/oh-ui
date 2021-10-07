@@ -1,6 +1,6 @@
 {
   "name": "@ohfinance/oh-ui",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "MIT",
   "repository": "git://github.com/OhFinance/oh-ui.git",
   "main": "dist/index.js",
@@ -14,23 +14,16 @@
     "bump:minor": "yarn version --minor",
     "bump:major": "yarn version --major"
   },
-  "devDependencies": {
+  "dependencies": {
     "@material-ui/core": "^4.11.4",
+    "@types/node": "^12.0.0",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.2",
     "@types/react-router-dom": "^5.1.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
     "typescript": "^4.1.2"
-  },
-  "peerDependencies": {
-    "@material-ui/core": "^4.11.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^5.2.0"
-  },
-  "dependencies": {
-    "react-icons": "^4.2.0"
   }
 }
