@@ -1,4 +1,4 @@
-export * from "./Header";
+export * from "./Heading";
 export * from "./Paragraph";
-export * from "./Subheader";
+export * from "./Subheading";
 export * from "./Text";

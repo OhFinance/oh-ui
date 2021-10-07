@@ -1,4 +1,5 @@
-import { Toolbar } from "@material-ui/core";
+import { Theme, Toolbar } from "@material-ui/core";
+import { useTheme } from "@material-ui/styles";
 import { Flex, FlexProps } from "../Flex";
 
 export interface DisplayProps extends FlexProps {
@@ -10,9 +11,17 @@ export const Display: React.FC<DisplayProps> = ({
   children,
   ...props
 }) => {
+  const theme = useTheme<Theme>();
+
   return (
-    <Flex height="100vh" minHeight="100%" {...props}>
-      {!!offset && <Toolbar />}
+    <Flex
+      column
+      minHeight="100vh"
+      height="100%"
+      width="100%"
+      marginTop={!!offset && `-${theme.mixins.toolbar.minHeight}px`}
+      {...props}
+    >
       {children}
     </Flex>
   );
