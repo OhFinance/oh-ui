@@ -1,10 +1,10 @@
 import { Typography, TypographyProps } from "@material-ui/core";
 import { FC } from "react";
 
-export const Heading: FC<TypographyProps> = ({ children, ...props }) => {
+export const Title: FC<TypographyProps> = ({ children, ...props }) => {
   return (
     <Typography
-      variant="h4"
+      variant="h3"
       gutterBottom={props.gutterBottom ?? true}
       {...props}
     >
