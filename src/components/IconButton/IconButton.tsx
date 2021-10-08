@@ -19,13 +19,15 @@ export const IconButton: FC<IconButtonProps> = ({
   fontSize,
   onClick,
   children,
+  ...props
 }) => {
   return (
     <MuiIconButton
       aria-label={name}
       href={href}
       onClick={onClick}
-      style={{ fontSize: fontSize ?? 32 }}
+      size={props.size ?? "small"}
+      {...(props as any)}
     >
       {children}
     </MuiIconButton>
