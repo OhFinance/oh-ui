@@ -1,12 +1,12 @@
 import {
-  createMuiTheme,
+  createTheme,
   responsiveFontSizes,
   Theme as MuiTheme,
   ThemeOptions,
 } from "@material-ui/core/styles";
 
 export const createLightTheme = (options?: ThemeOptions): MuiTheme => {
-  const theme = createMuiTheme({
+  const theme = createTheme({
     ...options,
     palette: {
       ...options.palette,
