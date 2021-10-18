@@ -2,6 +2,7 @@ export * from "./Button";
 export * from "./Display";
 export * from "./Flex";
 export * from "./IconButton";
+export * from "./Link";
 export * from "./Modal";
 export * from "./ScrollManager";
 export * from "./Surface";

@@ -5,6 +5,7 @@ export const DOCS_URL = "https://docs.oh.finance";
 export const ASSETS_URL = "https://assets.oh.finance";
 
 // Social Media
+export const GITHUB_URL = "https://github.com/OhFinance";
 export const MEDIUM_URL = "https://ohfinance.medium.com";
 export const TELEGRAM_URL = "https://t.me/OhFinanceDefi";
 export const TWITTER_URL = "https://twitter.com/OhFinanceDefi";
