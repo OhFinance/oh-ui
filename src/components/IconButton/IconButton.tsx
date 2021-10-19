@@ -24,6 +24,7 @@ export const IconButton: FC<IconButtonProps> = ({
       aria-label={label}
       href={href}
       onClick={onClick}
+      size={props.size ?? "medium"}
       {...(props as any)}
     >
       {children}

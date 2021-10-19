@@ -53,9 +53,5 @@ export const SocialMediaButton = ({ href, children }) => {
     }
   }, [href]);
 
-  return (
-    <IconButton size="medium" onClick={onClick}>
-      {children}
-    </IconButton>
-  );
+  return <IconButton onClick={onClick}>{children}</IconButton>;
 };

@@ -5,6 +5,7 @@ export const Heading: FC<TypographyProps> = ({ children, ...props }) => {
   return (
     <Typography
       variant="h4"
+      color={props.color ?? "textPrimary"}
       gutterBottom={props.gutterBottom ?? true}
       {...props}
     >
