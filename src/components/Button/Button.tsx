@@ -9,13 +9,28 @@ const useStyles = makeStyles((theme) => ({
   label: {
     textTransform: "none",
   },
+  paper: {
+    backgroundColor: theme.palette.background.paper,
+  },
 }));
 
-export const Button: FC<MuiButtonProps> = ({ children, ...props }) => {
+export interface ButtonProps extends MuiButtonProps {
+  paper?: boolean;
+}
+
+export const Button: FC<ButtonProps> = ({
+  paper = false,
+  children,
+  ...props
+}) => {
   const classes = useStyles();
 
   return (
-    <MuiButton classes={{ label: classes.label }} {...props}>
+    <MuiButton
+      classes={{ label: classes.label }}
+      className={paper && classes.paper}
+      {...props}
+    >
       {children}
     </MuiButton>
   );

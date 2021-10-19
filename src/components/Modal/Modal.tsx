@@ -62,7 +62,7 @@ export const Modal: FC<ModalProps> = ({
         </IconButton>
       </DialogTitle>
       <DialogContent dividers>
-        <Box p={p || 3}>{children}</Box>
+        <Box p={p ?? 3}>{children}</Box>
       </DialogContent>
       {/* <DialogActions>
 
