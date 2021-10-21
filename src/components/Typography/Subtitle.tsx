@@ -6,7 +6,6 @@ export const Subtitle: FC<TypographyProps> = ({ children, ...props }) => {
     <Typography
       variant="subtitle1"
       color={props.color ?? "textPrimary"}
-      paragraph={props.paragraph ?? true}
       {...props}
     >
       {children}

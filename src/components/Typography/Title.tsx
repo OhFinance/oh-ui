@@ -3,12 +3,7 @@ import { FC } from "react";
 
 export const Title: FC<TypographyProps> = ({ children, ...props }) => {
   return (
-    <Typography
-      variant="h3"
-      color={props.color ?? "textPrimary"}
-      gutterBottom={props.gutterBottom ?? true}
-      {...props}
-    >
+    <Typography variant="h3" color={props.color ?? "textPrimary"} {...props}>
       {children}
     </Typography>
   );
