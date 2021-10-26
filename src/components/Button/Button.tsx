@@ -16,10 +16,12 @@ const useStyles = makeStyles((theme) => ({
 
 export interface ButtonProps extends MuiButtonProps {
   paper?: boolean;
+  loading?: boolean;
 }
 
 export const Button: FC<ButtonProps> = ({
   paper = false,
+  loading = false,
   children,
   ...props
 }) => {
@@ -28,7 +30,7 @@ export const Button: FC<ButtonProps> = ({
   return (
     <MuiButton
       classes={{ label: classes.label }}
-      className={paper && classes.paper}
+      className={(paper && classes.paper) || undefined}
       {...props}
     >
       {children}
