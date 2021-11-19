@@ -4,6 +4,12 @@ export const APP_URL = "https://beta.oh.finance";
 export const DOCS_URL = "https://docs.oh.finance";
 export const ASSETS_URL = "https://assets.oh.finance";
 
+// Partners
+export const GECKO_URL = "https://www.coingecko.com/en/coins/oh-finance";
+export const CMC_URL = "https://coinmarketcap.com/currencies/oh-finance/";
+export const DEXTOOLS_URL =
+  "https://www.dextools.io/app/ether/pair-explorer/0xcb4288ee0484b51ccb8d40893c4812df72cd5f70";
+
 // Social Media
 export const GITHUB_URL = "https://github.com/OhFinance";
 export const MEDIUM_URL = "https://ohfinance.medium.com";
