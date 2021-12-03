@@ -1,5 +1,5 @@
 import {
-  createTheme,
+  createMuiTheme,
   responsiveFontSizes,
   Theme as MuiTheme,
   ThemeOptions,
@@ -39,7 +39,7 @@ const darkScrollbar = (options = scrollBar) => {
 };
 
 export const createDarkTheme = (options: ThemeOptions): MuiTheme => {
-  const theme = createTheme({
+  const theme = createMuiTheme({
     ...options,
     palette: {
       ...options.palette,
