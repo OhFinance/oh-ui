@@ -10,7 +10,7 @@ const BaseThemeOptions: ThemeOptions = {
     },
   },
   shape: {
-    borderRadius: 16,
+    borderRadius: 8,
   },
   typography: {
     fontFamily: [

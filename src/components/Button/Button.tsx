@@ -31,6 +31,7 @@ export const Button: FC<ButtonProps> = ({
     <MuiButton
       classes={{ label: classes.label }}
       className={(paper && classes.paper) || undefined}
+      disableElevation
       {...props}
     >
       {children}

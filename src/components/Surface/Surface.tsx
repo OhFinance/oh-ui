@@ -7,7 +7,7 @@ export interface SurfaceProps {
 
 export const Surface: FC<SurfaceProps> = ({ p, children }) => {
   return (
-    <Paper variant="outlined">
+    <Paper variant="outlined" style={{ borderRadius: 16 }}>
       <Box p={p === undefined ? 3 : p}>{children}</Box>
     </Paper>
   );
