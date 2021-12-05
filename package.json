@@ -1,6 +1,6 @@
 {
   "name": "@ohfinance/oh-ui",
-  "version": "1.17.0",
+  "version": "1.18.0",
   "license": "MIT",
   "repository": "git://github.com/OhFinance/oh-ui.git",
   "main": "dist/index.js",
