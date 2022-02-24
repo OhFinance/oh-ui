@@ -1,6 +1,6 @@
 // Domains
 export const BASE_URL = "https://oh.finance";
-export const APP_URL = "https://beta.oh.finance";
+export const APP_URL = "https://app.oh.finance";
 export const DOCS_URL = "https://docs.oh.finance";
 export const ASSETS_URL = "https://assets.oh.finance";
 
